@@ -9,6 +9,7 @@
 
 ## In thread, most of the time, your answer will be, we cannot predict the answer.
 ## Now we cannot predict the order of execution.
+## start() method register a thread with CPU.
 
 <img width="1106" height="305" alt="image" src="https://github.com/user-attachments/assets/f0700b10-d3b2-4af2-ba3a-4cb0ed8cbf4d" />
 
