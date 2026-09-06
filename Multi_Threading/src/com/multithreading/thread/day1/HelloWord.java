@@ -6,8 +6,11 @@ class Mythread extends Thread {
 	public void run() {
 		
 		System.out.println("Mythread.run()......executing thr task: " + Thread.currentThread().getName());	
-		
+
+		Payment p = new Payment();
+		p.doPay();
 	}
+	
 	
 }
 
@@ -33,9 +36,16 @@ public class HelloWord {
 
 	}
 
-	public void someMethod() {
-		System.out.println("Who is running this thread: " + Thread.currentThread().getName());
-		System.out.println("HelloWord.someMethod()");
-	}
+	
 
 }
+
+ class Payment{
+	
+	public void doPay() {
+		
+		
+		System.out.println("Payment.pay().... excuted By"+ Thread.currentThread().getName());
+	}
+	
+ }
