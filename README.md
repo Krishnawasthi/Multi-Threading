@@ -8,6 +8,7 @@
 <img width="1108" height="313" alt="image" src="https://github.com/user-attachments/assets/a872533c-24eb-4e1d-9280-c9c6695f6c4b" />
 
 ## In thread, most of the time, your answer will be, we cannot predict the answer.
+## Now we cannot predict the order of execution.
 
 <img width="1106" height="305" alt="image" src="https://github.com/user-attachments/assets/f0700b10-d3b2-4af2-ba3a-4cb0ed8cbf4d" />
 
