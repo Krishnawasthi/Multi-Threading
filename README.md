@@ -15,5 +15,7 @@
 
 <img width="1106" height="306" alt="image" src="https://github.com/user-attachments/assets/eb51923b-3f68-439e-b535-0b19b8c31cb4" />
 
+## We cannot predict the order. We cannot predict the order of execution. We don't know, right, who will get the chance first. Chance means…
+## Which thread will be allowed by CPU to  execute the task.
 
 
