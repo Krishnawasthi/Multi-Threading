@@ -2,6 +2,9 @@
 
 ## 📌 Overview
 
+<img width="1100" height="309" alt="image" src="https://github.com/user-attachments/assets/283b946a-536c-47bf-a367-08b3688449c1" />
+
+
 When multiple threads access and modify the same shared resource at the same time, a **race condition** can occur.
 
 Synchronization is used to make sure that only one thread can access the critical section at a time.
@@ -76,6 +79,7 @@ public class Main {
 ```text
 Final Count: 2000
 ```
+
 
 ## 🎯 Key Points
 
