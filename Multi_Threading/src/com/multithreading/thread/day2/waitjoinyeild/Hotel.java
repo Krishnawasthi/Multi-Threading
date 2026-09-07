@@ -9,6 +9,7 @@ class Cooking extends Thread {
 
 		try {
 			Thread.currentThread().sleep(3000);
+			
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -32,7 +33,7 @@ public class Hotel {
 		t1.start(); //cooking stared
 		
 		try {
-			t1.join();
+			t1.join();   //waiter will wait until the food is cooked.
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
