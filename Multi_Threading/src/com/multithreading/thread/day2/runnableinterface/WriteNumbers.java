@@ -1,45 +1,45 @@
 package com.multithreading.thread.day2.runnableinterface;
 
-class PrintNumber implements Runnable{
+class PrintNumber implements Runnable {
 
 	@Override
-	public void run() {  //  thread is on running state executing state
-		
-		for(int i = 0; i <= 10; i++) {
-			
-			System.out.println("Number is: " + i);
-			if(i == 5) {
-				
+	public void run() { // thread is on running state executing state
+
+		for (int i = 0; i <= 10; i++) {
+
+			System.out.println("Number is: " + i + " executed by thread " + Thread.currentThread().getName());
+			if (i == 5) {
+
 				System.out.println("Sending " + Thread.currentThread().getName() + " to waiting state");
 				try {
-					
-					Thread.currentThread().sleep(5000);   //thread is on sleep state for 5 milli seconds
-				}
-				catch(InterruptedException e) {
-					
+
+					Thread.currentThread().sleep(5000); // thread is on sleep state for 5 milli seconds
+				} catch (InterruptedException e) {
+
 					e.printStackTrace();
 				}
-				
+
+				System.out.println("Sleep time over ... Start executing again " + Thread.currentThread().getName());
+
 			}
-		}		
-	}	
-			
+		}
+	}
+
 }
 
 public class WriteNumbers {
 
-	public static void main(String[] args) 
-	{
-	
-		PrintNumber numbers = new PrintNumber(); //creating new thread Object
-		
+	public static void main(String[] args) {
+
+		PrintNumber numbers = new PrintNumber(); // creating new thread Object
+
 		Thread t1 = new Thread(numbers);
-		
-		t1.start();  // runnable
-			
-			
-		
-		
+
+		t1.start(); // runnable
+
+		// if you called run method directly there will be no threading is involved this
+		// will be just normal method calling
+
 	}
 
 }
