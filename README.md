@@ -28,5 +28,9 @@
 
 ### start() can call only when thread is new born otherwise it will give IllegalThreadStateException.
 
+## Here thread is on the Sleeping state for 5 milli second
+<img width="1107" height="302" alt="image" src="https://github.com/user-attachments/assets/a09f0c08-6e33-4067-a582-9a2d734f5d95" />
+
+
 
 
