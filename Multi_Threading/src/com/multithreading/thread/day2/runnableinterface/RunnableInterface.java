@@ -6,10 +6,20 @@ package com.multithreading.thread.day2.runnableinterface;
 class MyThread implements Runnable{
 
 	@Override
-	public void run() {
+	public void run()  // running
+	{
 		
-		System.out.println("Mythread.run()......" + Thread.currentThread().getName());
+		System.out.println("Mythread.run()...... attending classes --- started at 9am" );
+		System.out.println("Mythread.run()......" );
+		System.out.println("Mythread.run()......");
+		System.out.println("Mythread.run()......" );
+		//T1(student) can go to Sleep/pause state (30 min) --> Waiting state - 
+		//once waiting is over , t1 will move to runnable --> CPu gives time to t1 --> running state
+		System.out.println("Mythread.run()......" );
+		System.out.println("Mythread.run()......" );
+		System.out.println("Mythread.run()......" );
 		
+		System.out.println("Mythread.run()...... attending classes --- till end at 6pm" );
 	}
 	
 	
@@ -21,15 +31,14 @@ public class RunnableInterface {
 		
 		MyThread myThread =  new MyThread();
 		
-		Thread t1 = new Thread(myThread);
+		Thread t1 = new Thread(myThread); //new born (thread object created)
 		
 		
-		 t1.start();
+		 t1.start();  //  thread moved from new born to runnbale
 		 
-		 Thread t2 = new Thread(myThread);
+		 t1.start();  //???
 		 
-		 t2.start();
-
+		 
 	}
 
 }
