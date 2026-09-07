@@ -1,4 +1,4 @@
-<img width="1536" height="1024" alt="ChatGPT Image Sep 7, 2026, 12_57_40 PM" src="https://github.com/user-attachments/assets/56dad940-a9ff-4f27-ac8f-6aa89e218942" /># Multi-Threading
+# Multi-Threading
 
 <img width="1106" height="308" alt="image" src="https://github.com/user-attachments/assets/d52b483f-a5e8-475c-aeef-67265a35b437" />
 
@@ -27,6 +27,15 @@
 <img width="1123" height="259" alt="image" src="https://github.com/user-attachments/assets/ca33acf7-136a-41b5-936f-9d4fbe6b64e5" />
 
 ### start() can call only when thread is new born otherwise it will give IllegalThreadStateException.
+
+## Here thread is on the Sleeping state for 5 milli second
+<img width="1107" height="302" alt="image" src="https://github.com/user-attachments/assets/a09f0c08-6e33-4067-a582-9a2d734f5d95" />
+<img width="1105" height="215" alt="image" src="https://github.com/user-attachments/assets/8ecf9f1c-5fc6-47be-82b5-e2f0436d858e" />
+
+### If you directly call run method at the place of start() method it won't be multithreading this will be normal call for a method that is run() method.
+
+## Solve Problems : 
+<img width="1105" height="296" alt="image" src="https://github.com/user-attachments/assets/3759f2b8-9499-4edc-96ad-f2ab3235979f" />
 
 
 
