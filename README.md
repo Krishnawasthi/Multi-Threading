@@ -20,5 +20,6 @@
 
 # Life cycle of Thread:
 <img width="1066" height="196" alt="image" src="https://github.com/user-attachments/assets/9326f9a1-d384-44f9-b627-cc2f72b9fafe" />
+<img width="1097" height="309" alt="image" src="https://github.com/user-attachments/assets/e353f13f-6be6-46c2-9fae-84a796b5a0ba" />
 
 
