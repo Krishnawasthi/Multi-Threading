@@ -36,7 +36,7 @@ public class RunnableInterface {
 		
 		 t1.start();  //  thread moved from new born to runnbale
 		 
-		 t1.start();  //???
+		 t1.start();  //??? no need this otherwise you will get exception
 		 
 		 
 	}
