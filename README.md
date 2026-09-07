@@ -30,6 +30,7 @@
 
 ## Here thread is on the Sleeping state for 5 milli second
 <img width="1107" height="302" alt="image" src="https://github.com/user-attachments/assets/a09f0c08-6e33-4067-a582-9a2d734f5d95" />
+<img width="1105" height="127" alt="image" src="https://github.com/user-attachments/assets/f337dc2c-eeec-40ca-934e-3fbcb3bc1c04" />
 
 
 
