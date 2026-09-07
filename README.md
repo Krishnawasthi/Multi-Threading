@@ -3,6 +3,7 @@
 <img width="1106" height="308" alt="image" src="https://github.com/user-attachments/assets/d52b483f-a5e8-475c-aeef-67265a35b437" />
 
 <img width="1103" height="300" alt="image" src="https://github.com/user-attachments/assets/7fb7efbe-788f-4e24-8f26-7de6f110e67d" />
+<img width="1103" height="131" alt="image" src="https://github.com/user-attachments/assets/29c44fd6-127f-4c33-8ffa-70aecf0cf36a" />
 
 <img width="1108" height="181" alt="image" src="https://github.com/user-attachments/assets/1113f02e-164f-4aa1-8479-0aaaf5378fc2" />
 <img width="1108" height="313" alt="image" src="https://github.com/user-attachments/assets/a872533c-24eb-4e1d-9280-c9c6695f6c4b" />
@@ -14,6 +15,8 @@
 <img width="1106" height="305" alt="image" src="https://github.com/user-attachments/assets/f0700b10-d3b2-4af2-ba3a-4cb0ed8cbf4d" />
 
 <img width="1106" height="306" alt="image" src="https://github.com/user-attachments/assets/eb51923b-3f68-439e-b535-0b19b8c31cb4" />
+
+## We cannot predict the order. We cannot predict the order of execution. We don't know, right, who will get the chance first,  Which thread will be allowed by CPU to  execute the task.
 
 
 
