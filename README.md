@@ -18,5 +18,7 @@
 
 ## We cannot predict the order. We cannot predict the order of execution. We don't know, right, who will get the chance first,  Which thread will be allowed by CPU to  execute the task.
 
+# Life cycle of Thread:
+<img width="1066" height="196" alt="image" src="https://github.com/user-attachments/assets/9326f9a1-d384-44f9-b627-cc2f72b9fafe" />
 
 
