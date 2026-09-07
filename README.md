@@ -1,4 +1,4 @@
-# Multi-Threading
+<img width="1536" height="1024" alt="ChatGPT Image Sep 7, 2026, 12_57_40 PM" src="https://github.com/user-attachments/assets/56dad940-a9ff-4f27-ac8f-6aa89e218942" /># Multi-Threading
 
 <img width="1106" height="308" alt="image" src="https://github.com/user-attachments/assets/d52b483f-a5e8-475c-aeef-67265a35b437" />
 
@@ -21,8 +21,12 @@
 # Life cycle of Thread:
 <img width="1066" height="196" alt="image" src="https://github.com/user-attachments/assets/9326f9a1-d384-44f9-b627-cc2f72b9fafe" />
 <img width="1097" height="309" alt="image" src="https://github.com/user-attachments/assets/e353f13f-6be6-46c2-9fae-84a796b5a0ba" />
+<img width="1106" height="309" alt="image" src="https://github.com/user-attachments/assets/2ee94c8e-569a-4330-bd3c-48d3758c6235" />
+
+
 <img width="1123" height="259" alt="image" src="https://github.com/user-attachments/assets/ca33acf7-136a-41b5-936f-9d4fbe6b64e5" />
 
 ### start() can call only when thread is new born otherwise it will give IllegalThreadStateException.
+
 
 
