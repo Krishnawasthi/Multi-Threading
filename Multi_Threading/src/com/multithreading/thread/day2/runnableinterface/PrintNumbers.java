@@ -69,7 +69,7 @@ class OddNumbers extends Thread {
 		
 	}
 
-public class PrintOddNumbers {
+public class PrintNumbers {
 
 	public static void main(String[] args) {
 
