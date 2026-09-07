@@ -34,5 +34,8 @@
 
 ### If you directly call run method at the place of start() method it won't be multithreading this will be normal call for a method that is run() method.
 
+## Solve Problems : 
+<img width="1105" height="296" alt="image" src="https://github.com/user-attachments/assets/3759f2b8-9499-4edc-96ad-f2ab3235979f" />
+
 
 
