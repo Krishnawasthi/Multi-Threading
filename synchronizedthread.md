@@ -40,10 +40,13 @@ class Counter {
     }
 }
 ```
+<img width="1540" height="712" alt="image" src="https://github.com/user-attachments/assets/24ebd135-c34c-4bb0-b07c-56d3649f1f48" />
+
+## Every object will have one object lock.
 
 Now, when multiple threads access `increment()`, the operation is protected from a race condition.
 
-## 🧵 Example
+## 🧵 Example 2
 
 ```java
 public class Main {
