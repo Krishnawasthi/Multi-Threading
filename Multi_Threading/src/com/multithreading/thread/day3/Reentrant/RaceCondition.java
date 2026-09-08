@@ -1,4 +1,6 @@
-package com.multithreading.thread.day3.synchrozied;
+package com.multithreading.thread.day3.Reentrant;
+
+import java.util.concurrent.locks.ReentrantLock;
 
 class  BankAccount {
 
@@ -7,9 +9,10 @@ class  BankAccount {
 	public static void withdraw(int amount) {
 		
 		System.out.println(Thread.currentThread().getName() + " some other 50 lines code.........");  ///slow down the performance 
+		  
+	ReentrantLock  reentrantLock = new ReentrantLock();
 		
-		synchronized(BankAccount.class){  //only one thread will be able to execute this block.
-		
+	reentrantLock.lock();
 		if (balance >= amount) {
 
 			System.out.println(Thread.currentThread().getName() + " is Withdrawing: " + amount);
@@ -18,8 +21,7 @@ class  BankAccount {
 			try {
 				Thread.currentThread().sleep(100);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			      e.printStackTrace();
 			}
 
 			balance = balance - amount;
@@ -30,9 +32,11 @@ class  BankAccount {
 		else {
 
 			System.out.println("Hey "+Thread.currentThread().getName() + " Insufficient Balance");
-		}
-}
 	}
+		reentrantLock.unlock();;
+		
+}
+	
 
 	public int getBalance() {
 
@@ -79,7 +83,5 @@ public class RaceCondition {
 		System.out.println("Final Balance: "+ account.getBalance());
 		
 		
-
 	}
-
-}
+	}
