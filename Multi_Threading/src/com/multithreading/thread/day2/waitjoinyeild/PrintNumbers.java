@@ -1,6 +1,6 @@
 package com.multithreading.thread.day2.waitjoinyeild;
 
-class  Task {
+class Task {
 
 	public synchronized void printEvenNumber() {
 
@@ -8,7 +8,7 @@ class  Task {
 
 			if (i % 2 == 0) {
 
-				System.out.println(" Even Numbers: " + i+" " + Thread.currentThread().getName());
+				System.out.println(" Even Numbers: " + i + " " + Thread.currentThread().getName());
 
 			}
 		}
@@ -21,7 +21,7 @@ class  Task {
 
 			if (i % 2 != 0) {
 
-				System.out.println(" Odd Numbers: " + i +" " + Thread.currentThread().getName());
+				System.out.println(" Odd Numbers: " + i + " " + Thread.currentThread().getName());
 
 			}
 		}
@@ -29,7 +29,7 @@ class  Task {
 	}
 }
 
-class  OddThread extends Thread {
+class OddThread extends Thread {
 	Task task;
 
 	public OddThread(Task task) {
