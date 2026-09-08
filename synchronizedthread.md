@@ -165,8 +165,74 @@ class BankAccount {
 | Different objects can have different locks | All objects share the same class lock |
 | Usually used for instance data             | Usually used for static data          |
 
-### Key Point
+# Another Way of synchronizing the block:
 
-* `this` → **Object Lock**
-* `BankAccount.class` → **Class Lock**
-* `synchronized` helps prevent **race conditions** by allowing only one thread to access the critical section at a time.
+# Reentrance in Java
+
+**Reentrance** means that a thread which already owns a lock can acquire the **same lock again** without getting blocked.
+
+Java's `synchronized` mechanism is **reentrant**.
+
+## Example
+
+```java
+class BankAccount {
+
+    public synchronized void withdraw() {
+        System.out.println("Withdraw method");
+
+        checkBalance();
+    }
+
+    public synchronized void checkBalance() {
+        System.out.println("Checking balance");
+    }
+}
+```
+
+When a thread calls:
+
+```java
+withdraw();
+```
+
+The thread gets the lock of the `BankAccount` object.
+
+Inside `withdraw()`, it calls:
+
+```java
+checkBalance();
+```
+
+`checkBalance()` is also synchronized, but the **same thread already owns the lock**.
+
+Because Java locks are reentrant, the thread can enter `checkBalance()` without waiting for itself to release the lock.
+
+## Why is it called Reentrant?
+
+The same thread can **re-enter** a synchronized method/block that uses the same lock.
+
+```text
+Thread
+  ↓
+withdraw() → gets lock
+  ↓
+checkBalance() → gets the same lock again
+  ↓
+returns from checkBalance()
+  ↓
+returns from withdraw()
+  ↓
+lock released
+```
+
+## Important Point
+
+A lock is associated with the **thread that owns it**.
+
+The same thread can acquire the same lock multiple times, but another thread must wait until the lock is completely released.
+
+**In short:**
+
+> Reentrance = A thread can acquire the same lock again if it already owns that lock.
+
