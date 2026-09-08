@@ -44,6 +44,8 @@ class Counter {
 
 ## Every object will have one object lock.
 
+## If any method called on the particular object had required that object lock to enter into synchronized method. While a particular thread is executing.     That same object will not have any other lock, so other thread cannot acquire it, they will be waiting outside.
+
 Now, when multiple threads access `increment()`, the operation is protected from a race condition.
 
 ## 🧵 Example 2
