@@ -96,11 +96,11 @@ Final Count: 2000
 
 # Synchronized Block in Java
 
-A **synchronized block** is used to allow only one thread at a time to execute a specific section of code.
+A **synchronized block** allows only one thread at a time to execute a critical section of code.
 
-## Example
+## Object Lock
 
-In this program, two customers (`Krishna` and `Rohan`) are using the same `BankAccount`.
+In our `BankAccount` example:
 
 ```java
 synchronized(this) {
@@ -108,3 +108,65 @@ synchronized(this) {
         balance = balance - amount;
     }
 }
+```
+
+Here, `this` refers to the current `BankAccount` object.
+
+Since Krishna and Rohan are using the **same BankAccount object**, both threads compete for the same object lock.
+
+```java
+BankAccount account = new BankAccount();
+
+Customer t1 = new Customer(account, "Krishna", 700);
+Customer t2 = new Customer(account, "Rohan", 800);
+```
+
+Only one thread can execute the synchronized block at a time.
+
+## Class Lock
+
+A **class lock** is used to synchronize at the class level.
+
+```java
+synchronized(BankAccount.class) {
+    // critical section
+}
+```
+
+The lock belongs to the `BankAccount` class, not to a particular object.
+
+Class locks are commonly used when working with **static variables or static methods**.
+
+Example:
+
+```java
+class BankAccount {
+
+    private static int balance = 1000;
+
+    public void withdraw(int amount) {
+
+        synchronized(BankAccount.class) {
+
+            if (balance >= amount) {
+                balance = balance - amount;
+            }
+        }
+    }
+}
+```
+
+## Object Lock vs Class Lock
+
+| Object Lock                                | Class Lock                            |
+| ------------------------------------------ | ------------------------------------- |
+| `synchronized(this)`                       | `synchronized(BankAccount.class)`     |
+| Lock belongs to an object                  | Lock belongs to the class             |
+| Different objects can have different locks | All objects share the same class lock |
+| Usually used for instance data             | Usually used for static data          |
+
+### Key Point
+
+* `this` → **Object Lock**
+* `BankAccount.class` → **Class Lock**
+* `synchronized` helps prevent **race conditions** by allowing only one thread to access the critical section at a time.
