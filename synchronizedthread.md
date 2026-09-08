@@ -92,3 +92,19 @@ Final Count: 2000
 * **Synchronization:** Controls access to shared resources.
 * **synchronized:** Allows only one thread at a time to execute the protected code.
 * **join():** Makes the main thread wait until the other threads finish.
+
+
+# Synchronized Block in Java
+
+A **synchronized block** is used to allow only one thread at a time to execute a specific section of code.
+
+## Example
+
+In this program, two customers (`Krishna` and `Rohan`) are using the same `BankAccount`.
+
+```java
+synchronized(this) {
+    if (balance >= amount) {
+        balance = balance - amount;
+    }
+}
