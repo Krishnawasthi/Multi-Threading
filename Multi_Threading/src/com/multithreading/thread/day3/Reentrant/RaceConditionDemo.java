@@ -1,18 +1,18 @@
 package com.multithreading.thread.day3.Reentrant;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 class  BankAccount {
 
-	private static int balance = 1000;
-
-	public static void withdraw(int amount) {
+	private  int balance = 1000;
+	ReentrantLock  reentrantLock = new ReentrantLock();   // it implements the manual locking 
+	public void withdraw(int amount) throws InterruptedException {
 		
 		System.out.println(Thread.currentThread().getName() + " some other 50 lines code.........");  ///slow down the performance 
 		  
-	ReentrantLock  reentrantLock = new ReentrantLock();   // it implements the manual locking 
-		
-	reentrantLock.lock();
+	reentrantLock.tryLock(2000, TimeUnit.MILLISECONDS);
+	
 		if (balance >= amount) {
 
 			System.out.println(Thread.currentThread().getName() + " is Withdrawing: " + amount);
@@ -31,9 +31,9 @@ class  BankAccount {
 
 		else {
 
-			System.out.println("Hey "+Thread.currentThread().getName() + " Insufficient Balance");
+			System.out.println("Hey! "+Thread.currentThread().getName() + " You have Insufficient Balance");
 	}
-		reentrantLock.unlock();;
+	  reentrantLock.unlock();
 		
 }
 	
@@ -59,7 +59,12 @@ class Customer extends Thread
 	
 	public void run(){
 		
-		BankAccount.withdraw(amount);
+		try {
+			account.withdraw(amount);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 }
