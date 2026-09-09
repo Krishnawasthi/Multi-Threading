@@ -10,7 +10,7 @@ class  BankAccount {
 		
 		System.out.println(Thread.currentThread().getName() + " some other 50 lines code.........");  ///slow down the performance 
 		  
-	ReentrantLock  reentrantLock = new ReentrantLock();
+	ReentrantLock  reentrantLock = new ReentrantLock();   // it implements the manual locking 
 		
 	reentrantLock.lock();
 		if (balance >= amount) {
@@ -64,7 +64,7 @@ class Customer extends Thread
 	}
 }
 
-public class RaceCondition {
+public class RaceConditionDemo {
 
 	public static void main(String[] args) throws Exception {
 		BankAccount account = new BankAccount();
