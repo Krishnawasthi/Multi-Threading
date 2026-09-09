@@ -176,6 +176,7 @@ class BankAccount {
 Without reentrance, a thread calling into a method it already holds the lock on (e.g., a recursive call, or one synchronized method calling another on the same object) would block forever waiting on a lock it itself is holding — a self-deadlock.
 
 ---
+<img width="712" height="90" alt="image" src="https://github.com/user-attachments/assets/e67aec39-73d2-4e99-975e-639305dba640" />
 
 ## 1. Reentrant `synchronized` Block
 
