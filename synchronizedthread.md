@@ -284,6 +284,7 @@ public void increment() {
 
 ## 5. Summary
 
+## synchronization and synchronization block handled by the JVM, but in the other hand Reentrant block are handled by the Developer, those are manual.
 - **Reentrant** = a thread can re-acquire a lock it already holds, without blocking.
 - Java's `synchronized` keyword is reentrant by default (based on object monitors and an internal count).
 - `ReentrantLock` is the explicit, more flexible equivalent, with the same reentrant guarantee plus extra features (fairness, tryLock, interruptible locking, conditions).
