@@ -11,15 +11,15 @@ class  BankAccount {
 		
 		System.out.println(Thread.currentThread().getName() + " some other 50 lines code.........");  ///slow down the performance 
 		  
-	reentrantLock.tryLock(2000, TimeUnit.MILLISECONDS);
-	
+	boolean lockStatus = reentrantLock.tryLock(2000, TimeUnit.MILLISECONDS);
+	   System.out.println("Thread status : " +  lockStatus);
 		if (balance >= amount) {
 
 			System.out.println(Thread.currentThread().getName() + " is Withdrawing: " + amount);
 
 			// delay
 			try {
-				Thread.currentThread().sleep(100);
+				Thread.currentThread().sleep(300);
 			} catch (InterruptedException e) {
 			      e.printStackTrace();
 			}
