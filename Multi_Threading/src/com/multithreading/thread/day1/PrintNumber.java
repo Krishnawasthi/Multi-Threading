@@ -5,10 +5,16 @@ package com.multithreading.thread.day1;
 class Number extends Thread{
 	
 	@Override
-	public void run() {
-		
+	public synchronized void run() {
+	
 		for(int i = 0; i<10; i++) {
 			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			System.out.println("Print Number: " + i +  "   " + Thread.currentThread().getName());
 		} 
 	
