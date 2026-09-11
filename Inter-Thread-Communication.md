@@ -3,6 +3,8 @@
 A practical guide to how threads "talk" to each other in Java using the wait/notify mechanism, with a Producer-Consumer implementation.
 
 ---
+<img width="903" height="425" alt="image" src="https://github.com/user-attachments/assets/a24c268a-993c-4009-b0c8-d964a9ff8580" />
+
 
 ## Table of Contents
 
