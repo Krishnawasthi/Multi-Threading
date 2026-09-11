@@ -82,6 +82,8 @@ synchronized (lock) {
     lock.notifyAll(); // wakes all waiting threads
 }
 ```
+<img width="1028" height="263" alt="image" src="https://github.com/user-attachments/assets/cfab2165-a4df-423c-aa9a-f5cbafd113e0" />
+
 
 ---
 
