@@ -3,7 +3,10 @@
 A practical guide to how threads "talk" to each other in Java using the wait/notify mechanism, with a Producer-Consumer implementation.
 
 ---
-<img width="903" height="425" alt="image" src="https://github.com/user-attachments/assets/a24c268a-993c-4009-b0c8-d964a9ff8580" />
+<img width="1103" height="306" alt="image" src="https://github.com/user-attachments/assets/a24c268a-993c-4009-b0c8-d964a9ff8580" />
+
+In the Producer-Consumer problem, consider the Producer as Thread 1 (T1) and the Consumer as Thread 2 (T2). First, T1 is doing its work and producing an item, while T2 is waiting because there is nothing available to consume. Once T1 produces the item, it puts it in the shared resource and uses notify() to tell T2 that an item is available. T2 wakes up and consumes the item. If the resource is empty again, T2 uses wait(), which means, “I cannot continue because there is nothing to consume, so I will wait.” When T1 produces another item, it calls notify(), which tells the waiting T2, “You can continue now.” So, simply, wait() means wait until something is available, and notify() means wake up a waiting thread because something has become available.
+
 
 
 ## Table of Contents
