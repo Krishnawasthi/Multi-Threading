@@ -7,11 +7,11 @@ class Task {
 	public synchronized void printEvenNumber() {
 
 		
-		for (int i = 0; i <= 6; i++) {
+		for (int i = 0; i <= 10; i++) {
 			
 			if (i % 2 == 0) {
 				try {
-					Thread.sleep(1000);
+					wait(2000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -29,7 +29,7 @@ class Task {
              
 			if (i % 2 != 0) {
 				try {
-					Thread.sleep(1000);
+					wait(2000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -74,7 +74,6 @@ class OddThread extends Thread {
 	}
 
 }
-
 
 
 public class PrintNumbers {
