@@ -1,6 +1,7 @@
 <img width="1102" height="323" alt="image" src="https://github.com/user-attachments/assets/29090b27-9195-46a1-bf6d-6e4f20555eb7" />
 
 # Thread.yield()
+<img width="1088" height="250" alt="image" src="https://github.com/user-attachments/assets/7fff3967-3923-4a26-b0d8-d971bae3f182" />
 
 `Thread.yield()` is a method provided by the `Thread` class in Java. It is used when the currently running thread wants to give other threads a chance to execute.
 
