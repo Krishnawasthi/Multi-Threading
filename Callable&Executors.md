@@ -212,3 +212,7 @@ public class CompleteExample {
 - Always call `shutdown()` (or use try-with-resources with `ExecutorService` in Java 19+, which implements `AutoCloseable`) — leaked thread pools keep the JVM alive.
 - `future.get()` without a timeout can block forever if the task never completes — prefer the timeout overload in production code.
 - For multiple tasks where you want "wait for all" or "wait for first" semantics, look at `ExecutorService.invokeAll()` / `invokeAny()`, or `CompletableFuture` for more composable async pipelines.
+
+  <img width="1557" height="700" alt="image" src="https://github.com/user-attachments/assets/a0106320-ce00-4dc7-9b2a-87c9d46536fa" />
+  ## If you will do this you don't need to create multiple threads. like in the below image.
+
