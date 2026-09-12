@@ -47,6 +47,7 @@ public class CallableExample {
     }
 }
 ```
+## call() --> return future object and throws exception, return type of call() boolean.
 
 **Key points:**
 - Single abstract method: `V call() throws Exception`
