@@ -37,5 +37,11 @@
 ## Solve Problems : 
 <img width="1105" height="296" alt="image" src="https://github.com/user-attachments/assets/3759f2b8-9499-4edc-96ad-f2ab3235979f" />
 
+# Runnable Interface: 
+## Whenever you expecting a return from the thread Runnable is not the right choice---> Use callable<V> is the right chioce
+<img width="820" height="97" alt="image" src="https://github.com/user-attachments/assets/8aca66fa-fc54-466a-b062-b2b125ac2eb5" />
+
+
+
 
 
