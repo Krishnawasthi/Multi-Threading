@@ -4,14 +4,17 @@ class FirstThread extends Thread{
 	
 	@Override
 	public void run() {
+		
+		
+		try {
+			Thread.currentThread().sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	System.out.println("Running first thread......");
 	
-	try {
-		Thread.currentThread().sleep(2000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	
 		
 	}
 	
@@ -24,7 +27,7 @@ class SecondThread extends Thread{
 		
 		
 	try {
-		Thread.currentThread().sleep(2000);
+		Thread.currentThread().sleep(4000);
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
@@ -34,8 +37,6 @@ class SecondThread extends Thread{
 	}
 	
 }
-
-
 
 public class ThreadExample {
 
