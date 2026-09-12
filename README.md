@@ -37,9 +37,11 @@
 ## Solve Problems : 
 <img width="1105" height="296" alt="image" src="https://github.com/user-attachments/assets/3759f2b8-9499-4edc-96ad-f2ab3235979f" />
 
-# Runnable Interface: 
+# Runnable Interface and callable Interface : 
 ## Whenever you expecting a return from the thread Runnable is not the right choice---> Use callable<V> is the right chioce
 <img width="820" height="97" alt="image" src="https://github.com/user-attachments/assets/8aca66fa-fc54-466a-b062-b2b125ac2eb5" />
+<img width="1083" height="162" alt="image" src="https://github.com/user-attachments/assets/f6f6277a-e608-4fbc-95cd-7d49b3a956f2" />
+## callable throws the exception in return. 
 
 
 
