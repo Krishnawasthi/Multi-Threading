@@ -356,4 +356,5 @@ Single  → Only one thread
 ```
 <img width="1093" height="305" alt="image" src="https://github.com/user-attachments/assets/e1e930bc-27bc-4122-828d-9f8b9e094ed1" />
 
+<img width="1067" height="302" alt="image" src="https://github.com/user-attachments/assets/40cbc59e-d7fe-4c03-9f9f-b0b98f757b05" />
 
