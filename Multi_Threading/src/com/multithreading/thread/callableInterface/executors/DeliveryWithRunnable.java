@@ -20,9 +20,7 @@ class NotifyDelivery implements Runnable{
 	
 		System.out.println();
 		
-		
 	}
-	
 }
 
 public class DeliveryWithRunnable {
