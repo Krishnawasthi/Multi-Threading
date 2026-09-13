@@ -219,3 +219,140 @@ public class CompleteExample {
 
 <img width="1072" height="191" alt="image" src="https://github.com/user-attachments/assets/0b6fd3e1-1875-4688-8f82-81ce247dc90b" />
 
+# Types of executor thread pool
+<img width="967" height="290" alt="image" src="https://github.com/user-attachments/assets/8d8c5855-ef49-4aee-b202-adead197f98b" />
+
+
+The **Executor Framework** in Java is used to manage threads instead of creating and managing threads manually.
+
+Java provides different types of thread pools through the `Executors` class.
+
+## 1. Fixed Thread Pool
+
+`newFixedThreadPool()` creates a pool with a fixed number of threads.
+
+```java
+ExecutorService executor = Executors.newFixedThreadPool(3);
+```
+
+If there are 10 tasks but only 3 threads:
+
+```text
+Thread 1 → Task 1
+Thread 2 → Task 2
+Thread 3 → Task 3
+
+Task 4, 5, 6... → Wait in the queue
+```
+
+When a thread finishes its task, it takes the next task from the queue.
+
+**Use:** When you want to control the maximum number of threads.
+
+---
+
+## 2. Cached Thread Pool
+
+`newCachedThreadPool()` creates new threads when required and reuses existing idle threads.
+
+```java
+ExecutorService executor = Executors.newCachedThreadPool();
+```
+
+Example:
+
+```text
+Task 1 → Thread 1
+Task 2 → Thread 2
+Task 3 → Thread 3
+
+Thread becomes idle
+       ↓
+New task arrives
+       ↓
+Reuse the idle thread
+```
+
+**Use:** Useful for many short-lived tasks where the workload changes frequently.
+
+---
+
+## 3. Single Thread Executor
+
+`newSingleThreadExecutor()` creates an executor with only **one worker thread**.
+
+```java
+ExecutorService executor = Executors.newSingleThreadExecutor();
+```
+
+Tasks are executed one after another:
+
+```text
+Task 1 → Thread 1
+Task 2 → Thread 1
+Task 3 → Thread 1
+Task 4 → Thread 1
+```
+
+Task 2 starts only after Task 1 finishes.
+
+**Use:** When tasks must execute sequentially.
+
+---
+
+## Quick Comparison
+
+| Thread Pool                 | Number of Threads | Main Purpose                     |
+| --------------------------- | ----------------- | -------------------------------- |
+| `newFixedThreadPool(n)`     | Fixed             | Control number of worker threads |
+| `newCachedThreadPool()`     | Dynamic           | Create/reuse threads as needed   |
+| `newSingleThreadExecutor()` | 1                 | Execute tasks sequentially       |
+
+## Basic Example
+
+```java
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecutorExample {
+    public static void main(String[] args) {
+
+        ExecutorService executor =
+                Executors.newFixedThreadPool(3);
+
+        for (int i = 1; i <= 5; i++) {
+
+            int task = i;
+
+            executor.submit(() -> {
+                System.out.println(
+                    "Executing Task " + task +
+                    " by " + Thread.currentThread().getName()
+                );
+            });
+        }
+
+        executor.shutdown();
+    }
+}
+```
+
+### Important
+
+Always call:
+
+```java
+executor.shutdown();
+```
+
+when you are finished submitting tasks so that the executor can properly shut down its worker threads.
+
+### Remember
+
+```text
+Fixed   → Fixed number of threads
+Cached  → Threads created/reused dynamically
+Single  → Only one thread
+```
+
+
