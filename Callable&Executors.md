@@ -362,4 +362,5 @@ Single  → Only one thread
 
 
 ### Future<V> is the object that holds the result returned by a Callable task, which you can get later using future.get().
-### future.get() it will not move forward till is get the response.(blocking)
+### future.get() it will not move forward till is get the response.(blocking). this will be block till thread get complete.
+
