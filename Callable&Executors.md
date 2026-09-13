@@ -354,5 +354,6 @@ Fixed   → Fixed number of threads
 Cached  → Threads created/reused dynamically
 Single  → Only one thread
 ```
+<img width="1093" height="305" alt="image" src="https://github.com/user-attachments/assets/e1e930bc-27bc-4122-828d-9f8b9e094ed1" />
 
 
