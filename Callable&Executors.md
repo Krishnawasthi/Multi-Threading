@@ -358,7 +358,8 @@ Single  → Only one thread
 
 <img width="1067" height="302" alt="image" src="https://github.com/user-attachments/assets/40cbc59e-d7fe-4c03-9f9f-b0b98f757b05" />
 
-<img width="1062" height="237" alt="image" src="https://github.com/user-attachments/assets/6b0d237d-88be-4519-b808-4856c699f1ae" />
+<img width="1042" height="222" alt="image" src="https://github.com/user-attachments/assets/d0df5656-b50b-4512-985f-87d1532fa6e5" />
+
 
 ### Future<V> is the object that holds the result returned by a Callable task, which you can get later using future.get().
-
+### future.get() it will not move forward till is get the response.(blocking)
