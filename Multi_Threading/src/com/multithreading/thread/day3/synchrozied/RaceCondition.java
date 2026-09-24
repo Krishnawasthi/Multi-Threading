@@ -1,6 +1,6 @@
 package com.multithreading.thread.day3.synchrozied;
 
-class  BankAccount {
+class  BankAccountt {
 
 	private static int balance = 1000;
 
@@ -55,7 +55,7 @@ class Customer extends Thread
 	
 	public void run(){
 		
-		BankAccount.withdraw(amount);
+		BankAccountt.withdraw(amount);
 		
 	}
 }
