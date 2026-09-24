@@ -102,6 +102,7 @@ Final Count: 2000
 # Synchronized Block in Java
 
 A **synchronized block** allows only one thread at a time to execute a critical section of code.
+Always better than synchronized method, because methods might have some critical code so using synchronized block always been the great idea.
 
 ## Object Lock
 
@@ -295,3 +296,5 @@ public void increment() {
 - Java's `synchronized` keyword is reentrant by default (based on object monitors and an internal count).
 - `ReentrantLock` is the explicit, more flexible equivalent, with the same reentrant guarantee plus extra features (fairness, tryLock, interruptible locking, conditions).
 - Always release exactly as many times as you acquire — use `finally` blocks with `ReentrantLock`.
+# Problem with Synchronization:
+ if one thread holds the lock other threads will be on the waiting, sometime this time will be too much, so other threads will be in unnecessary waiting state.
