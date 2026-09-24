@@ -102,6 +102,7 @@ Final Count: 2000
 # Synchronized Block in Java
 
 A **synchronized block** allows only one thread at a time to execute a critical section of code.
+Always better than synchronized method, because methods might have some critical code so using synchronized block always been the great idea.
 
 ## Object Lock
 
