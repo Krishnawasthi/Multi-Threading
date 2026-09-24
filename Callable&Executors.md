@@ -1,4 +1,5 @@
 # Java Concurrency Basics: Runnable, Callable, ExecutorService & Future
+<img width="731" height="405" alt="image" src="https://github.com/user-attachments/assets/1d56aa2e-1bc6-4f97-94c4-35b982955618" />
 
 A quick reference with runnable examples for the core building blocks of Java's `java.util.concurrent` package.
 
