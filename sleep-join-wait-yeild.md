@@ -2,7 +2,8 @@
 ## Sleep()
 ### sleep will go to waiting state but holding the lock, when the sleep time will over it directly start executing again. 
 ## wait()
-### wait will release the object lock and will go the waiting state when time will be over it directly can not start executing, when it releases the lock other thread will acquire the lock so it needs to wait until the other thread releases the lock, By using wait() thread will be in the runnable state when the time gets over.
+### wait will release the object lock and will go the waiting state when time will be over it directly can not start executing, when it releases the lock other thread will acquire the lock so it needs to wait until the other thread releases the lock, By using wait() thread will be in the runnable state when the time gets over. It(wait) must be called from Synchronize method.
+
 <img width="1102" height="323" alt="image" src="https://github.com/user-attachments/assets/29090b27-9195-46a1-bf6d-6e4f20555eb7" />
 
 # Thread.yield()
