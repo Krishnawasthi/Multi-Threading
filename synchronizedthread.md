@@ -46,7 +46,7 @@ class Counter {
 ```
 <img width="1540" height="712" alt="image" src="https://github.com/user-attachments/assets/24ebd135-c34c-4bb0-b07c-56d3649f1f48" />
 
-## Every object will have one object lock.
+## synchronization work on the object lock, one object will have one object lock.
 
 ## If any method called on the particular object had required that object lock to enter into synchronized method. While a particular thread is executing.     That same object will not have any other lock, so other thread cannot acquire it, they will be waiting outside.
 
