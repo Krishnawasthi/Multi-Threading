@@ -13,10 +13,7 @@ public class BankSystem {
 		Tranferthread2 gPay = new Tranferthread2(bankAcc1,bankAcc2);
 		gPay.setName("gPay");
 		UPI.start();
-		
 		phonePay.start();
-		
-		
 	    gPay.start();
 	    
 	    gPay.join();

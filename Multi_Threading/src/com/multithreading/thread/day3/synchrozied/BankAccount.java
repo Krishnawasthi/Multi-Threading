@@ -4,7 +4,12 @@ public class BankAccount {
 	
 	private int balance = 1000;
 	
-	public synchronized void fundTransfer(BankAccount reciever, int amount) {
+	public void fundTransfer(BankAccount reciever, int amount) {
+	
+		System.out.println("["+ Thread.currentThread().getName()+"] start BankAccount.fundTransfer()....20lines of code");
+		
+		synchronized (this) {  //Synchronize block always better than synchronized method they can not touch the criticle code
+			
 		
 		if(balance >= amount) {
 			
@@ -26,8 +31,14 @@ public class BankAccount {
 			System.out.println("["+Thread.currentThread().getName() + "] Inuffucient balance: " + balance);
 		}
 		
+		}
 		
-	}
+		System.out.println("["+ Thread.currentThread().getName()+"] END BankAccount.fundTransfer()....20lines of code");
+		
+		}
+		
+
+	
 	
 	public int getBalance() {
 		
