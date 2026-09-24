@@ -1,4 +1,6 @@
 # Multi-Threading
+# life cycle of thread:
+<img width="548" height="340" alt="image" src="https://github.com/user-attachments/assets/bc212825-aa75-428c-bc45-a052e1b5a53e" />
 
 <img width="1106" height="308" alt="image" src="https://github.com/user-attachments/assets/d52b483f-a5e8-475c-aeef-67265a35b437" />
 
