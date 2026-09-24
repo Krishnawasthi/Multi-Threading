@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-<img width="705" height="320" alt="image" src="https://github.com/user-attachments/assets/b6f5949a-683e-4a91-b4f7-7c1647151801" />
+<img width="905" height="320" alt="image" src="https://github.com/user-attachments/assets/b6f5949a-683e-4a91-b4f7-7c1647151801" />
 
 ## Synchronization doesn't mean accessing one thread at a time it means one thread at a time for a particular object, like if it is UPI it will complete all the payment and update the balance then another thread like gpay , phonepay can get the thread for few milliseconds until the payment is done.
 
@@ -45,6 +45,7 @@ class Counter {
 }
 ```
 <img width="1540" height="712" alt="image" src="https://github.com/user-attachments/assets/24ebd135-c34c-4bb0-b07c-56d3649f1f48" />
+<img width="903" height="390" alt="image" src="https://github.com/user-attachments/assets/463d71f8-0aa1-4098-bdae-dd07c2d3242d" />
 
 ## synchronization work on the object lock, one object will have one object lock.(Above picture the task is the object that gets the object lock)
 
