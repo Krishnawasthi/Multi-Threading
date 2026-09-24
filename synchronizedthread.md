@@ -45,7 +45,7 @@ class Counter {
 }
 ```
 <img width="1540" height="712" alt="image" src="https://github.com/user-attachments/assets/24ebd135-c34c-4bb0-b07c-56d3649f1f48" />
-<img width="903" height="390" alt="image" src="https://github.com/user-attachments/assets/463d71f8-0aa1-4098-bdae-dd07c2d3242d" />
+<img width="903" height="309" alt="image" src="https://github.com/user-attachments/assets/463d71f8-0aa1-4098-bdae-dd07c2d3242d" />
 
 ## synchronization work on the object lock, one object will have one object lock.(Above picture the task is the object that gets the object lock)
 
