@@ -176,6 +176,7 @@ class BankAccount {
 # Reentrance in Java (Reentrant Locks / Synchronized Blocks)
 
 ## What is Reentrance?
+<img width="1065" height="197" alt="image" src="https://github.com/user-attachments/assets/05dd6674-6c79-436e-a6a9-563418b7e898" />
 
 **Reentrance** (or *re-entrancy*) is a property of synchronization mechanisms that allows a thread which already holds a lock to **acquire the same lock again** without deadlocking itself. In Java, both the `synchronized` keyword and `java.util.concurrent.locks.ReentrantLock` are reentrant by default.
 
