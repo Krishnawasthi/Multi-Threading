@@ -7,25 +7,28 @@ public class Task {
 	public synchronized void produce(int _data) throws InterruptedException {
 		
 		while(isDataAvailble) {
-		System.out.println( Thread.currentThread().getName()+" is waiting");
+		System.out.println( Thread.currentThread().getName()+" is waiting.....");
 			wait();
 		}
 		
-		data = _data;
+		this.data = _data;
 		System.out.println( Thread.currentThread().getName()+" Producing data = "+ data );
 		isDataAvailble = true;
-		notify();
-		
+		System.out.println("-----------------producer is notifing consumer to consume---------------");
+		notify();  //notify consumer so that consumer can coomsume this.
+		System.out.println();
 		}
 	public synchronized void comsume() throws InterruptedException {
 		
 		while(!isDataAvailble) {
-			System.out.println( Thread.currentThread().getName()+" is waiting");
+			System.out.println( Thread.currentThread().getName()+" is waiting.....");
 			wait();
 		}
 		System.out.println(Thread.currentThread().getName()+" Consuming data = "+ data);
 		isDataAvailble = false;
-		notify();
+		System.out.println("--------------------consumer is notifing producer to generate more data-------------");
+		notify();  //consumer is notify to the producer
+		System.out.println();
 	}
 
 }

@@ -16,6 +16,7 @@ public class Consumer extends Thread {
 		try {
 			
 			task.consumer();
+			Thread.sleep(1000);
 			
 		} catch (InterruptedException e) {
 			e.printStackTrace();

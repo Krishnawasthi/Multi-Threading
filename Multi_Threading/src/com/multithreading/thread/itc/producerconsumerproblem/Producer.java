@@ -13,7 +13,10 @@ public class Producer extends Thread {
 		for(int i = 0; i<10; i++) {	
 			
 		try {
+			
 			task.produce(i);
+			Thread.sleep(1000);
+	
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
