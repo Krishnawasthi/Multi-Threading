@@ -288,6 +288,7 @@ public void increment() {
 **Best practice:** always pair `lock()`/`unlock()` calls using `try { ... } finally { lock.unlock(); }`, exactly mirroring how `synchronized` guarantees release even on exceptions.
 
 ---
+<img width="983" height="308" alt="image" src="https://github.com/user-attachments/assets/d0c1372e-2211-4614-b3dc-a9e02e7039e9" />
 
 ## 5. Summary
 
