@@ -22,9 +22,7 @@ public  class Task {
 		System.out.println("Getting number: "+ num +" with the thread ["+Thread.currentThread().getName()+"]");
 		
 	}
-	//  lock.unlock();
-	//what is someone forget to unlock for the there is lock called trylock
-			
+	//  lock.unlock(); 
 			
 			
 		
