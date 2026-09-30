@@ -83,6 +83,7 @@ public class ExecutorServiceExample {
     }
 }
 ```
+<img width="1006" height="418" alt="image" src="https://github.com/user-attachments/assets/2485ac04-bdea-4956-921e-6b3a4227c686" />
 
 **Common factory methods (`Executors`):**
 | Method | Use case |
